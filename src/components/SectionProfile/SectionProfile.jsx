@@ -6,17 +6,35 @@ const SectionProfile = () => {
 		<div className={style.section}>
 			<div className={style.image}></div>
 			<div className={style.person}>
-				ava + person-data
-            </div>
+				<div className={style.ava}>
+					<img src="avatar.png" alt='avatar' />
+				</div>
+				<div className={style.data}>
+					<p className={style.name}>Василий Коломиец</p>
+					<p className={style.age}>34 года</p>
+					<p className={style.edu}>БГУИР, 2008</p>
+					<p className={style.place}>Минск, Беларусь</p>
+					<p className={style.hobbies}>Программирование, печешки</p>
+				</div>
+			</div>
 			<div className={style.newpost}>
-				My new post
-				<div className={style.textbox}>
-					Type message here
+				<p className={style.title}>
+					Написать новое сообщение
+				</p>
+				<p className={style.textbox}>
+					<input type='text' className={style.text} />
+				</p>
+				<div className={style.button}>
+					<p>Отправить</p>
 				</div>
 			</div>
 			<div className={style.sentpost}>
-				<div className={style.item}>sentpost1</div>
-				<div className={style.item}>sentpost2</div>
+				<div className={style.item}>
+					Ищу программершу для беспорядочных JS-отношений
+				</div>
+				<div className={style.item}>
+					Голова перекосилась на правый бок - вот результаты образного мышления
+				</div>
 			</div>
 		</div>
 	);
