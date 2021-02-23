@@ -1,0 +1,18 @@
+.header {
+	position: fixed;
+	top: 0;
+	margin: 0 auto;
+	width: 1170px;
+	height: 70px;
+	background-color: #444142;
+	display: flex;
+	align-items: center;
+}
+.logo {
+	width: 60px;
+	height: 60px;
+	margin: 0px 0px 0px 30px;
+}
+.logo img {
+	max-width: 100%;
+}
