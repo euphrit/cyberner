@@ -2,10 +2,10 @@
 	grid-column: 2;
 	width: 100%;
 }
-.section__image {
+.image {
 	max-width: 100%;
 	height: 120px;
-	background-image: url("./../img/texture.PNG");
+	background-image: url("./../../img/texture.PNG");
 	background-size: contain;
 	background-repeat: round;
 }
