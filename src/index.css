@@ -10,6 +10,9 @@ body {
   height: 100%;
   font-size: 18px;
 }
+body {
+  background-color: #c0c0c050;
+}
 li {
   list-style-type: none;
   margin: 0px 0px 15px 0px;

@@ -39,43 +39,21 @@
 	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 	line-height: 2;
 }
-.text {
+textarea {
+	padding: 0 10px;
 	border: 1px solid rgb(43, 43, 95);
 	border-radius: 7px;
-	width: 100%;
-	height: 40px;
 }
 .button {
-	display: flex;
-	justify-content: end;
+	width: 100%;
 	padding: 10px 0px 0px 0px;
+	text-align: right;
 }
-.button p {
+button {
 	background-color: rgb(43, 43, 95);
 	color: #fff;
 	border: 2px solid gray;
 	border-radius: 15px;
 	padding: 5px;
 	cursor: pointer;
-}
-.sentpost {
-	padding: 20px;
-}
-.item::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 20px;
-	height: 20px;
-	border-radius: 100%;
-	background-color: rgb(43, 43, 95);
-}
-.item {
-	position: relative;
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: rgb(43, 43, 95);
-	font-size: 18px;
-	text-indent: 50px;
-	margin: 0px 0px 30px 0px;
 }

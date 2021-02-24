@@ -1,4 +1,5 @@
 import React from 'react';
+import MyPosts from './MyPosts/MyPosts';
 import style from './SectionProfile.module.css';
 
 const SectionProfile = () => {
@@ -21,22 +22,13 @@ const SectionProfile = () => {
 				<p className={style.title}>
 					Написать новое сообщение
 				</p>
-				<p className={style.textbox}>
-					<input type='text' className={style.text} />
+				<textarea rows="5" cols="113"></textarea>
+				<p className={style.button}>
+					<button>Отправить</button>
 				</p>
-				<div className={style.button}>
-					<p>Отправить</p>
-				</div>
 			</div>
-			<div className={style.sentpost}>
-				<div className={style.item}>
-					Ищу программершу для беспорядочных JS-отношений
-				</div>
-				<div className={style.item}>
-					Голова перекосилась на правый бок - вот результаты образного мышления
-				</div>
-			</div>
-		</div>
+			<MyPosts />
+		</div >
 	);
 }
 
