@@ -6,7 +6,7 @@ const Sidebar = () => {
 		<aside className={style.sidebar}>
 			<nav className={style.menu}>
 				<ul className={style.list}>
-					<li className={style.item}><a href='#'>Profile</a></li>
+					<li className={`${style.item} ${style.active}`}><a href='#'>Profile</a></li>
 					<li className={style.item}><a href='#'>Messages</a></li>
 					<li className={style.item}><a href='#'>News</a></li>
 					<li className={style.item}><a href='#'>Music</a></li>
