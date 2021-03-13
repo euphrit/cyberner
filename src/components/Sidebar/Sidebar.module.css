@@ -8,3 +8,8 @@
 .settings {
 	margin: 45px 0px 0px 0px;
 }
+.active a {
+	color: rgb(211, 152, 97);
+	font-weight: 700;
+	text-shadow: 2px 2px 1px #000;
+}
