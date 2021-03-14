@@ -19,11 +19,13 @@ const App = () => {
         <main>
           <div className='content'>
             <Sidebar />
-            <Route path='/sectionprofile' component={SectionProfile} />
-            <Route path='/sectionmessages' component={SectionMessages} />
-            <Route path='/sectionnews' component={SectionNews} />
-            <Route path='/sectionmusic' component={SectionMusic} />
-            <Route path='/sectionsettings' component={SectionSettings} />
+            <div className='section-grid'>
+              <Route path='/sectionprofile' component={SectionProfile} />
+              <Route path='/sectionmessages' component={SectionMessages} />
+              <Route path='/sectionnews' component={SectionNews} />
+              <Route path='/sectionmusic' component={SectionMusic} />
+              <Route path='/sectionsettings' component={SectionSettings} />
+            </div>
           </div>
           <Footer />
         </main>

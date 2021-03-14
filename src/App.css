@@ -18,3 +18,7 @@ main {
   gap: 1%;
   grid-template-columns: 15% 84%;
 }
+.section-grid {
+  grid-column: 2;
+  width: 100%;
+}

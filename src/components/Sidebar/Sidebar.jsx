@@ -6,20 +6,20 @@ const Sidebar = () => {
 	return (
 		<aside className={style.sidebar}>
 			<nav className={style.menu}>
-				<ul className={style.list}>
-					<li className={style.item}>
+				<ul>
+					<li>
 						<NavLink to='/sectionprofile' activeClassName={style.active}>Profile</NavLink>
 					</li>
-					<li className={style.item}>
+					<li>
 						<NavLink to='/sectionmessages' activeClassName={style.active}>Messages</NavLink>
 					</li>
-					<li className={style.item}>
+					<li>
 						<NavLink to='/sectionnews' activeClassName={style.active}>News</NavLink>
 					</li>
-					<li className={style.item}>
+					<li>
 						<NavLink to='/sectionmusic' activeClassName={style.active}>Music</NavLink>
 					</li>
-					<li className={`${style.item} ${style.settings}`}>
+					<li className={style.settings}>
 						<NavLink to='/sectionsettings' activeClassName={style.active}>Settings</NavLink>
 					</li>
 				</ul>
