@@ -4,7 +4,7 @@ import style from './SectionProfile.module.css';
 
 const SectionProfile = () => {
 	return (
-		<div className={style.section}>
+		<div>
 			<div className={style.image}></div>
 			<div className={style.person}>
 				<div className={style.ava}>

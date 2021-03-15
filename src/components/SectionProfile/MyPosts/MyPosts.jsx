@@ -3,16 +3,23 @@ import style from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = () => {
+
+	let posts = [
+		{ id: 0, message: 'Why r u keeping silence?', likesCount: 2 },
+		{ id: 1, message: 'Hey, come on', likesCount: 2 },
+		{ id: 2, message: 'Please, talk with me...', likesCount: 15 },
+		{ id: 3, message: 'I miss you', likesCount: 10 },
+		{ id: 4, message: 'Hi, how r u?', likesCount: 14 },
+		{ id: 5, message: 'Keep out, whore!!!', likesCount: 0 },
+		{ id: 6, message: 'Fuck yourself, bitch!!!', likesCount: 7 },
+		{ id: 7, message: 'I know everything, cyber-skum!!!', likesCount: 3 }
+	];
+
+	let postsElements = posts.map(p => <Post message={p.message} likesCount={p.likesCount} />);
+
 	return (
 		<div className={style.posts}>
-			<Post message='Why r u keeping silence?' count='2' />
-			<Post message='Hey, come on' count='2' />
-			<Post message='Please, talk with me...' count='15' />
-			<Post message='I miss you' count='10' />
-			<Post message='Hi, how r u?' count='14' />
-			<Post message='Keep out, whore!!!' count='0' />
-			<Post message='Fuck yourself, bitch!!!' count='7' />
-			<Post message='I know everything, cyber-skum!!!' count='3' />
+			{postsElements}
 		</div>
 	);
 }
