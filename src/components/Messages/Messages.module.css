@@ -26,7 +26,7 @@
 .messages__item:last-child {
 	margin: 0px 0px 0px 0px;
 }
-.activeDialog {
+a.activeDialog {
 	font-weight: 700;
 }
 .messages {

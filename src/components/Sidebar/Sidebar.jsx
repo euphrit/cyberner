@@ -8,19 +8,19 @@ const Sidebar = () => {
 			<nav className={style.menu}>
 				<ul>
 					<li>
-						<NavLink to='/sectionprofile' activeClassName={style.active}>Profile</NavLink>
+						<NavLink to='/profile' activeClassName={style.active}>Profile</NavLink>
 					</li>
 					<li>
-						<NavLink to='/sectionmessages' activeClassName={style.active}>Messages</NavLink>
+						<NavLink to='/messages' activeClassName={style.active}>Messages</NavLink>
 					</li>
 					<li>
-						<NavLink to='/sectionnews' activeClassName={style.active}>News</NavLink>
+						<NavLink to='/news' activeClassName={style.active}>News</NavLink>
 					</li>
 					<li>
-						<NavLink to='/sectionmusic' activeClassName={style.active}>Music</NavLink>
+						<NavLink to='/music' activeClassName={style.active}>Music</NavLink>
 					</li>
 					<li className={style.settings}>
-						<NavLink to='/sectionsettings' activeClassName={style.active}>Settings</NavLink>
+						<NavLink to='/settings' activeClassName={style.active}>Settings</NavLink>
 					</li>
 				</ul>
 			</nav>
