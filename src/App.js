@@ -4,11 +4,11 @@ import './App.css';
 import Header from './components/Header/Header';
 import Sidebar from './components/Sidebar/Sidebar';
 import Footer from './components/Footer/Footer';
-import SectionProfile from './components/SectionProfile/SectionProfile';
-import SectionMessages from './components/SectionMessages/SectionMessages';
-import SectionNews from './components/SectionNews/SectionNews';
-import SectionMusic from './components/SectionMusic/SectionMusic';
-import SectionSettings from './components/SectionSettings/SectionSettings';
+import Profile from './components/Profile/Profile';
+import Messages from './components/Messages/Messages';
+import News from './components/News/News';
+import Music from './components/Music/Music';
+import Settings from './components/Settings/Settings';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 const App = () => {
@@ -19,12 +19,12 @@ const App = () => {
         <main>
           <div className='content'>
             <Sidebar />
-            <div className='section-grid'>
-              <Route path='/sectionprofile' component={SectionProfile} />
-              <Route path='/sectionmessages' component={SectionMessages} />
-              <Route path='/sectionnews' component={SectionNews} />
-              <Route path='/sectionmusic' component={SectionMusic} />
-              <Route path='/sectionsettings' component={SectionSettings} />
+            <div className='content__grid'>
+              <Route path='/profile' component={Profile} />
+              <Route path='/messages' component={Messages} />
+              <Route path='/news' component={News} />
+              <Route path='/music' component={Music} />
+              <Route path='/settings' component={Settings} />
             </div>
           </div>
           <Footer />
