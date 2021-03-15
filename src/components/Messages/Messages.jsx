@@ -1,22 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import s from './SectionMessages.module.css';
+import Dialog from './Dialog/Dialog';
+import Message from './Message/Message'
+import style from './Messages.module.css';
 
-const Dialog = (props) => {
-
-	return (
-		<div className={s.dialogs__item}>
-			<NavLink to={'/sectionmessages/' + props.id} >{props.name}</NavLink>
-		</div>
-	);
-}
-
-const Message = (props) => {
-	return <div className={s.messages__item}>{props.message}</div>;
-}
-
-
-const SectionMessages = () => {
+const Messages = () => {
 
 	let dialogs = [
 		{ id: '1', name: 'Arturchik' },
@@ -39,15 +27,15 @@ const SectionMessages = () => {
 
 	return (
 		<div>
-			<div className={s.title}>
+			<div className={style.title}>
 				Dialogs
 			</div>
-			<div className={s.flexWrapper}>
-				<div className={s.dialogs}>
+			<div className={style.flexWrapper}>
+				<div className={style.dialogs}>
 					{dialogsElements}
 				</div>
 
-				<div className={s.messages}>
+				<div className={style.messages}>
 					{messagesElements}
 				</div>
 			</div>
@@ -55,4 +43,4 @@ const SectionMessages = () => {
 	);
 }
 
-export default SectionMessages;
+export default Messages;

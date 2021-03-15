@@ -1,8 +1,8 @@
 import React from 'react';
 import MyPosts from './MyPosts/MyPosts';
-import style from './SectionProfile.module.css';
+import style from './Profile.module.css';
 
-const SectionProfile = () => {
+const Profile = () => {
 	return (
 		<div>
 			<div className={style.image}></div>
@@ -32,4 +32,4 @@ const SectionProfile = () => {
 	);
 }
 
-export default SectionProfile;
+export default Profile;
