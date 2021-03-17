@@ -1,10 +1,11 @@
 import React from 'react';
+import PageTitle from '../PageTitle/PageTitle';
 import style from './Settings.module.css';
 
-const Settings = () => {
+const Settings = (props) => {
 	return (
 		<div>
-			Settings
+			<PageTitle title={props.state.title} />
 		</div>
 	);
 }

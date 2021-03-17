@@ -1,0 +1,17 @@
+.flexLine {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 10px 0px 0px 0px;
+}
+.friendAvatar {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #c0c0c0;
+	border-radius: 50%;
+	box-shadow: 2px 2px 2px 2px #000;
+	margin: 0px 5px;
+}
+.friendAvatar img {
+	max-width: 100%;
+}

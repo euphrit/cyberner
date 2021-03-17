@@ -12,6 +12,7 @@ let state = {
 		]
 	},
 	messagesPage: {
+		title: 'Dialogs',
 		dialogs: [
 			{ id: '1', name: 'Arturchik' },
 			{ id: '2', name: 'Anutka' },
@@ -21,15 +22,24 @@ let state = {
 			{ id: '6', name: 'Zheka' }
 		],
 		messages: [
-			{ id: '0', message: 'Hello!' },
-			{ id: '1', message: 'How is your project?' },
-			{ id: '2', message: 'Where\'re you now' },
-			{ id: '3', message: 'Yo, nigga!' }
+			{ id: '0', message: 'Hello!', type: 'question' },
+			{ id: '1', message: 'How is your project?', type: 'answer' },
+			{ id: '2', message: 'Where\'re you now', type: 'question' },
+			{ id: '3', message: 'Yo, nigga!', type: 'answer' }
 		]
 	},
-	newsPage: {},
-	musicPage: {},
-	settingsPage: {},
+	newsPage: {
+		title: 'News'
+	},
+	musicPage: {
+		title: 'Music'
+	},
+	settingsPage: {
+		title: 'Settings'
+	},
+	friendsPage: {
+		title: 'Friends'
+	},
 	sidebar: {}
 }
 

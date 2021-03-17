@@ -6,7 +6,7 @@ const Post = (props) => {
 		<div className={style.item}>
 			<div className={style.flex}>
 				<div className={style.mini}>
-					<img src='minir2d2.jpg' />
+					<img src='images/minir2d2.jpg' />
 				</div>
 				<p>{props.message}</p>
 			</div>

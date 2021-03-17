@@ -1,10 +1,11 @@
 import React from 'react';
+import PageTitle from '../PageTitle/PageTitle';
 import style from './News.module.css';
 
-const News = () => {
+const News = (props) => {
 	return (
 		<div>
-			News
+			<PageTitle title={props.state.title} />
 		</div>
 	);
 }

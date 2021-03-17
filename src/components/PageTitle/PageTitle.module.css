@@ -1,0 +1,13 @@
+.title {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 18px;
+	font-style: italic;
+	color: rgb(43, 43, 95);
+	text-align: left;
+	margin: 20px 0px 25px;
+	text-decoration-line: underline;
+	text-decoration-style: double;
+	text-decoration-thickness: 2px;
+	text-decoration-color: rgb(43, 43, 95);
+	text-underline-offset: 5px;
+}

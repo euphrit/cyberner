@@ -1,10 +1,11 @@
 import React from 'react';
+import PageTitle from '../PageTitle/PageTitle';
 import style from './Music.module.css';
 
-const Music = () => {
+const Music = (props) => {
 	return (
 		<div>
-			Music
+			<PageTitle title={props.state.title} />
 		</div>
 	);
 }

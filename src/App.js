@@ -10,6 +10,7 @@ import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import { BrowserRouter, Route } from 'react-router-dom';
+import Friends from './components/Friends/Friends';
 
 const App = (props) => {
   return (
@@ -35,6 +36,9 @@ const App = (props) => {
               <Route
                 path='/settings'
                 render={() => <Settings state={props.state.settingsPage} />} />
+              <Route
+                path='/friends'
+                render={() => <Friends state={props.state.friendsPage} />} />
             </div>
           </div>
           <Footer />

@@ -5,7 +5,7 @@ const Person = () => {
 	return (
 		<div className={style.person}>
 			<div className={style.ava}>
-				<img src="avatar.png" alt='avatar' />
+				<img src="images/avatar.png" alt='avatar' />
 			</div>
 			<div className={style.data}>
 				<p className={style.name}>Василий Коломиец</p>
