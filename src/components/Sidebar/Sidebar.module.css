@@ -8,6 +8,10 @@
 .settings {
 	margin: 45px 0px 0px 0px;
 }
+.friends {
+	margin: 65px 0px 0px 0px;
+	text-transform: uppercase;
+}
 .active {
 	color: rgb(211, 152, 97);
 	font-weight: 700;
