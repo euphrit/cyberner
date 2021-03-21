@@ -3,8 +3,12 @@
 	height: 45px;
 	margin: 0px 0px 15px 0px;
 	display: grid;
-	grid-template-columns: 45px 1fr 20px;
+	grid-template-columns: 40px 1fr 5px;
 	grid-template-rows: repeat(3, 1fr);
+	column-gap: 5px;
+}
+.dialogsItem:last-child {
+	margin: 0px 0px 0px 0px;
 }
 .dialogLink {
 	grid-area: 1/2/2/3;

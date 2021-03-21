@@ -5,13 +5,15 @@ import MyPosts from './MyPosts/MyPosts';
 import style from './Profile.module.css';
 
 const Profile = (props) => {
-
 	return (
 		<div>
 			<div className={style.image}></div>
 			<Person />
-			<NewPost />
-			<MyPosts posts={props.state.posts} />
+			<NewPost
+				addPost={props.addPost}
+				updateNewPostText={props.updateNewPostText}
+				newPostText={props.profilePage.newPostText} />
+			<MyPosts posts={props.profilePage.posts} />
 		</div >
 	);
 }

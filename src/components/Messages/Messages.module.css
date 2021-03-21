@@ -4,26 +4,9 @@
 .dialogs {
 	border-right: 2px solid #c0c0c0;
 	margin: 0px 0px 0px 30px;
-	padding: 0 70px 0 0;
-}
-.dialogs__item {
-	margin: 0px 0px 15px 0px;
-}
-.dialogs__item a {
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-	color: rgb(43, 43, 95);
-}
-.dialogs__item:last-child,
-.messages__item:last-child {
-	margin: 0px 0px 0px 0px;
-}
-a.activeDialog {
-	font-weight: 700;
+	padding: 0 30px 0 0;
 }
 .messages {
 	flex-grow: 1;
 	margin: 0px 0px 0px 40px;
-}
-.messages__item {
-	margin: 0px 0px 10px 0px;
 }

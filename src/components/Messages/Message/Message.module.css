@@ -3,6 +3,10 @@
 	margin: 0px 0px 20px 0px;
 	display: flex;
 }
+.question:last-child,
+.answer:last-child {
+	margin: 0px 0px 0px 0px;
+}
 .question {
 	flex-direction: row;
 }

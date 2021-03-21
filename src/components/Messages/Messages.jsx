@@ -2,6 +2,7 @@ import React from 'react';
 import PageTitle from '../PageTitle/PageTitle';
 import Dialog from './Dialog/Dialog';
 import Message from './Message/Message';
+import SendMessage from './SendMessage/SendMessage';
 import style from './Messages.module.css';
 
 const Messages = (props) => {
@@ -22,7 +23,10 @@ const Messages = (props) => {
 					{messagesElements}
 				</div>
 			</div>
-
+			<SendMessage
+				addMessage={props.addMessage}
+				updateNewMessageText={props.updateNewMessageText}
+				newMessageText={props.state.newMessageText} />
 		</div >
 	);
 }

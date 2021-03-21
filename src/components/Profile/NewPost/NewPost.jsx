@@ -1,15 +1,20 @@
 import React from 'react';
-import SendMessage from '../../SendMessage/SendMessage';
+import SendPost from './SendPost/SendPost';
 import style from './../Profile.module.css';
 
 
-const NewPost = () => {
+const NewPost = (props) => {
+	debugger;
 	return (
 		<div className={style.newpost}>
 			<p className={style.title}>
 				Написать новое сообщение
 			</p>
-			<SendMessage />
+
+			<SendPost
+				addPost={props.addPost}
+				updateNewPostText={props.updateNewPostText}
+				newPostText={props.newPostText} />
 		</div>
 	);
 }
