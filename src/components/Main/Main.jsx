@@ -14,7 +14,7 @@ const Main = (props) => {
 	return (
 		<main>
 			<div className={style.content}>
-				<Sidebar />
+				<Sidebar sidebar={props.state.sidebar} />
 				<div className={style.content__grid}>
 					<Route
 						path='/profile'

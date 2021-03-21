@@ -9,7 +9,7 @@ const SendMessage = (props) => {
 
 	return (
 		<div className={style.sendMessageWrapper}>
-			<textarea rows='3' cols='80' onChange={onMessageChange} value={props.newMessageText}></textarea>
+			<textarea rows='3' cols='80' onChange={onMessageChange} placeholder="Enter your message here" value={props.newMessageText}></textarea>
 			<button onClick={addNewMessage}>Отправить</button>
 		</div>
 	);

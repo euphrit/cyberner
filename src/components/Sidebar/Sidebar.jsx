@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import FriendsLine from '../Friends/FriendsLine/FriendsLine';
+import FriendsLine from './FriendsLine/FriendsLine';
 import style from './Sidebar.module.css';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
 	return (
 		<aside className={style.sidebar}>
 			<nav className={style.menu}>
@@ -25,7 +25,7 @@ const Sidebar = () => {
 					</li>
 					<li className={style.friends}>
 						<NavLink to='/friends' activeClassName={style.active}>Friends</NavLink>
-						<FriendsLine />
+						<FriendsLine avatar={props.sidebar.avatar} />
 					</li>
 				</ul>
 			</nav>

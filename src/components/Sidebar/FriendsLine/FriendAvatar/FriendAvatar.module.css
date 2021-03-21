@@ -1,9 +1,3 @@
-.flexLine {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	margin: 10px 0px 0px 0px;
-}
 .friendAvatar {
 	width: 30px;
 	height: 30px;
