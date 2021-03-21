@@ -1,12 +1,12 @@
 import React from 'react';
-import { addPostActionCreator, updateNewPostText } from '../../../../redux/state/state';
+import { addPostCreator, updateNewPostTextCreator } from '../../../../redux/reducer/profile-reducer';
 import style from './SendPost.module.css';
 
 
 const SendPost = (props) => {
 
-	let addNewPost = () => props.dispatch(addPostActionCreator());
-	let onPostChange = (e) => props.dispatch(updateNewPostText(e.target.value));
+	let addNewPost = () => props.dispatch(addPostCreator());
+	let onPostChange = (e) => props.dispatch(updateNewPostTextCreator(e.target.value));
 
 	return (
 		<div className={style.sendPostWrapper}>

@@ -7,10 +7,6 @@ const NewPost = (props) => {
 	debugger;
 	return (
 		<div className={style.newpost}>
-			<p className={style.title}>
-				Написать новое сообщение
-			</p>
-
 			<SendPost
 				newPostText={props.newPostText}
 				dispatch={props.dispatch} />

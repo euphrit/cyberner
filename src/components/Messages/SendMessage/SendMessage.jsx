@@ -1,11 +1,11 @@
 import React from 'react';
-import { addMessageActionCreator, updateNewMessageText } from '../../../redux/state/state';
+import { addMessageCreator, updateNewMessageTextCreator } from '../../../redux/reducer/messages-reducer';
 import style from './SendMessage.module.css';
 
 const SendMessage = (props) => {
 
-	const addNewMessage = () => props.dispatch(addMessageActionCreator());
-	const onMessageChange = (e) => props.dispatch(updateNewMessageText(e.target.value));
+	const addNewMessage = () => props.dispatch(addMessageCreator());
+	const onMessageChange = (e) => props.dispatch(updateNewMessageTextCreator(e.target.value));
 
 	return (
 		<div className={style.sendMessageWrapper}>
