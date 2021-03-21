@@ -1,3 +1,13 @@
+const ADD_POST = 'ADD_POST';
+const ADD_MESSAGE = 'ADD_MESSAGE';
+const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE_NEW_MESSAGE_TEXT';
+const UPDATE_NEW_POST_TEXT = 'UPDATE_NEW_POST_TEXT';
+
+export const addPostActionCreator = () => ({ type: 'ADD_POST' });
+export const addMessageActionCreator = () => ({ type: 'ADD_MESSAGE' });
+export const updateNewMessageText = (text) => ({ type: 'UPDATE_NEW_MESSAGE_TEXT', text: text });
+export const updateNewPostText = (text) => ({ type: 'UPDATE_NEW_POST_TEXT', text: text });
+
 let store = {
 	_state: {
 		profilePage: {
@@ -45,7 +55,6 @@ let store = {
 		},
 		sidebar: {}
 	},
-
 	_callSubscriber() {
 		console.log('empty');
 	},
@@ -53,41 +62,41 @@ let store = {
 	getState() {
 		return this._state;
 	},
-
-	addPost() {
-		const newPost = {
-			id: this._state.profilePage.posts.length + 1,
-			message: this._state.profilePage.newPostText,
-			likesCount: 0
-		}
-		this._state.profilePage.posts.push(newPost);
-		this._state.profilePage.newPostText = '';
-		this._callSubscriber(this._state);
-	},
-
-	updateNewPostText(text) {
-		this._state.profilePage.newPostText = text;
-		this._callSubscriber(this._state);
-	},
-
-	addMessage() {
-		const newMessage = {
-			id: this._state.messagesPage.messages.length,
-			message: this._state.messagesPage.newMessageText,
-			type: 'answer'
-		}
-		this._state.messagesPage.messages.push(newMessage);
-		this._state.messagesPage.newMessageText = '';
-		this._callSubscriber(this._state);
-	},
-
-	updateNewMessageText(text) {
-		this._state.messagesPage.newMessageText = text;
-		this._callSubscriber(this._state);
-	},
-
 	subscribe(observer) {
 		this._callSubscriber = observer;
+	},
+
+	dispatch(action) {
+		switch (action.type) {
+			case ADD_POST:
+				const newPost = {
+					id: this._state.profilePage.posts.length + 1,
+					message: this._state.profilePage.newPostText,
+					likesCount: 0
+				}
+				this._state.profilePage.posts.push(newPost);
+				this._state.profilePage.newPostText = '';
+				this._callSubscriber(this._state);
+				break;
+			case UPDATE_NEW_POST_TEXT:
+				this._state.profilePage.newPostText = action.text;
+				this._callSubscriber(this._state);
+				break;
+			case ADD_MESSAGE:
+				const newMessage = {
+					id: this._state.messagesPage.messages.length,
+					message: this._state.messagesPage.newMessageText,
+					type: 'answer'
+				}
+				this._state.messagesPage.messages.push(newMessage);
+				this._state.messagesPage.newMessageText = '';
+				this._callSubscriber(this._state);
+				break;
+			case UPDATE_NEW_MESSAGE_TEXT:
+				this._state.messagesPage.newMessageText = action.text;
+				this._callSubscriber(this._state);
+				break;
+		}
 	}
 }
 

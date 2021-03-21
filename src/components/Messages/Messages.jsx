@@ -8,13 +8,13 @@ import style from './Messages.module.css';
 const Messages = (props) => {
 
 	let dialogsElements =
-		props.state.dialogs.map(d => <Dialog id={d.id} name={d.name} />);
+		props.messagePage.dialogs.map(d => <Dialog id={d.id} name={d.name} />);
 	let messagesElements =
-		props.state.messages.map(m => <Message message={m.message} type={m.type} />);
+		props.messagePage.messages.map(m => <Message message={m.message} type={m.type} />);
 
 	return (
 		<div>
-			<PageTitle title={props.state.title} />
+			<PageTitle title={props.messagePage.title} />
 			<div className={style.flexWrapper}>
 				<div className={style.dialogs}>
 					{dialogsElements}
@@ -24,9 +24,8 @@ const Messages = (props) => {
 				</div>
 			</div>
 			<SendMessage
-				addMessage={props.addMessage}
-				updateNewMessageText={props.updateNewMessageText}
-				newMessageText={props.state.newMessageText} />
+				newMessageText={props.messagePage.newMessageText}
+				dispatch={props.dispatch} />
 		</div >
 	);
 }

@@ -20,26 +20,24 @@ const Main = (props) => {
 						path='/profile'
 						render={() => <Profile
 							profilePage={props.state.profilePage}
-							addPost={props.addPost}
-							updateNewPostText={props.updateNewPostText} />} />
+							dispatch={props.dispatch} />} />
 					<Route
 						path='/messages'
 						render={() => <Messages
-							state={props.state.messagesPage}
-							addMessage={props.addMessage}
-							updateNewMessageText={props.updateNewMessageText} />} />
+							messagePage={props.state.messagesPage}
+							dispatch={props.dispatch} />} />
 					<Route
 						path='/news'
-						render={() => <News state={props.state.newsPage} />} />
+						render={() => <News newsPage={props.state.newsPage} />} />
 					<Route
 						path='/music'
-						render={() => <Music state={props.state.musicPage} />} />
+						render={() => <Music musicPage={props.state.musicPage} />} />
 					<Route
 						path='/settings'
-						render={() => <Settings state={props.state.settingsPage} />} />
+						render={() => <Settings settingsPage={props.state.settingsPage} />} />
 					<Route
 						path='/friends'
-						render={() => <Friends state={props.state.friendsPage} />} />
+						render={() => <Friends friendsPage={props.state.friendsPage} />} />
 				</div>
 			</div>
 			<Footer />

@@ -10,9 +10,8 @@ const Profile = (props) => {
 			<div className={style.image}></div>
 			<Person />
 			<NewPost
-				addPost={props.addPost}
-				updateNewPostText={props.updateNewPostText}
-				newPostText={props.profilePage.newPostText} />
+				newPostText={props.profilePage.newPostText}
+				dispatch={props.dispatch} />
 			<MyPosts posts={props.profilePage.posts} />
 		</div >
 	);

@@ -5,7 +5,7 @@ import style from './Friends.module.css';
 const Friends = (props) => {
 	return (
 		<div>
-			<PageTitle title={props.state.title} />
+			<PageTitle title={props.friendsPage.title} />
 		</div>
 	);
 }

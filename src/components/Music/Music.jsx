@@ -5,7 +5,7 @@ import style from './Music.module.css';
 const Music = (props) => {
 	return (
 		<div>
-			<PageTitle title={props.state.title} />
+			<PageTitle title={props.musicPage.title} />
 		</div>
 	);
 }

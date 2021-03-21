@@ -5,7 +5,7 @@ import style from './News.module.css';
 const News = (props) => {
 	return (
 		<div>
-			<PageTitle title={props.state.title} />
+			<PageTitle title={props.newsPage.title} />
 		</div>
 	);
 }

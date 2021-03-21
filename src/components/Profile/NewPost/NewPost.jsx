@@ -12,9 +12,8 @@ const NewPost = (props) => {
 			</p>
 
 			<SendPost
-				addPost={props.addPost}
-				updateNewPostText={props.updateNewPostText}
-				newPostText={props.newPostText} />
+				newPostText={props.newPostText}
+				dispatch={props.dispatch} />
 		</div>
 	);
 }

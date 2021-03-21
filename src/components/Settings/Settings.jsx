@@ -5,7 +5,7 @@ import style from './Settings.module.css';
 const Settings = (props) => {
 	return (
 		<div>
-			<PageTitle title={props.state.title} />
+			<PageTitle title={props.settingsPage.title} />
 		</div>
 	);
 }
